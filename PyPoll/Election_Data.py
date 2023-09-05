@@ -5,7 +5,7 @@ Total_Votes = 0
 Candidate_Votes = {}
 Candidates = []
 
-with open(election_csv) as csvfile:
+with open(election_csv, newline='') as csvfile:
     csvreader = csv.reader(csvfile,delimiter=',')
 
     next(csvreader)
